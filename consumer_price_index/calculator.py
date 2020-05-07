@@ -1,4 +1,4 @@
-# inflation.py
+# calculator.py
 
 import numpy as np 
 
