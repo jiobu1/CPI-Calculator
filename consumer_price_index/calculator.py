@@ -37,12 +37,14 @@ baseline_year = 2019
 baseline_inflation = cpi[baseline_year]
 
 amount = int(input("Please choose a number (e.g. 10540) "))
-year = int(input ("Choose a year between 1992 and 2018 "))
+year = int(input("Choose a year between 1992 and 2018 "))
+
 
 def inflation_adjustment(amount, year):
 
     inflation_rate = cpi[year]
-    output = amount * (baseline_inflation/ inflation_rate)
+    output = amount * (baseline_inflation/inflation_rate)
     return (f' If you had ${amount} in {year}, you would have ${output:.2f} in 2019 dollars.')
+
 
 print(inflation_adjustment(amount, year))
