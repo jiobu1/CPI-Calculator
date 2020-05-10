@@ -5,7 +5,6 @@
 # print(inflation_adjustment)
 
 
-from consumer_price_index.calculator_class import Run
+from consumer_price_index.calculator_class import calculator_class
 
-
-print(adjustment_amount)
+print()
