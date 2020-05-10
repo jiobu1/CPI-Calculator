@@ -10,7 +10,7 @@ setup(
     version="1.1",
     author="Jisha Obukwelu",
     author_email="jisha@lambdastudents.com",
-    description="Converts monetary amounts (from 1992) to present day values(2019)",
+    description="Converts monetary amounts either to present day values (2019) or historical values (1992-2018)",
     long_description=long_description,
     long_description_content_type="text/markdown", # required if using a md file for long desc
     #license="MIT",
