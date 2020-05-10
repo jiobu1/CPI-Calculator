@@ -49,12 +49,16 @@ class Reference_Year(Year):
             (year_instance.inflation_rate / self.inflation_rate)
         return (f' If you had ${self.amount} in {self.year}, you would have ${output:.2f} in {year_instance.year} dollars.')
 
+class Run(Reference_Year):
+    def __init__(self, value, amount, input):
+        super().__init__(value, amount)
+        self.dollar_value = int(input("Please choose a number (e.g. 10540) "))
+        self.baseline_year = int(input("[Baseline] Choose a year between 1992 and 2019 "))
+        self.reference_year = int(input("[Reference] Choose a year between 1992 and 2019 "))
 
-amount = int(input("Please choose a number (e.g. 10540) "))
-baseline_year = int(input("[Baseline] Choose a year between 1992 and 2019 "))
-reference_year = int(input("[Reference] Choose a year between 1992 and 2019 "))
+    def dollars(self, baseline_year):
+        self.baseline_year_instance = Year(baseline_year)
+        self. reference_year_instance = Reference_Year(self.reference_year, self.dollar_value)
+        adjusted_amount = self.reference_year_instance.get_dollars(self.baseline_year_instance)
+        return adjusted_amount
 
-baseline_year_instance = Year(baseline_year)
-reference_year_instance = Reference_Year(reference_year, amount)
-dollars = reference_year_instance.get_dollars(baseline_year_instance)
-print(dollars)

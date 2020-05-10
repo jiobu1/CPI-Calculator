@@ -41,6 +41,15 @@ year = int(input("Choose a year between 1992 and 2018 "))
 
 
 def inflation_adjustment(amount, year):
+    """
+    Converts dollar amounts to past values (1992-2018) or current value (2019)
+
+    Params:
+        amount and year must be inputted 
+
+    Returns:
+        Converted  dollar amount
+    """
 
     inflation_rate = cpi[year]
     output = amount * (baseline_inflation/inflation_rate)

@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="consumer_price_index", # the name that you will install via pip
-    version="1.0",
+    version="1.1",
     author="Jisha Obukwelu",
     author_email="jisha@lambdastudents.com",
     description="Converts monetary amounts (from 1992) to present day values(2019)",
