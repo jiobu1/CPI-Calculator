@@ -13,7 +13,7 @@ TO DO
 
  or 
 
- from calculator_class import *
+ from cpi.calculator_class import *
 
 
  ```
