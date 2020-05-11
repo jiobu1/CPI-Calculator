@@ -13,9 +13,9 @@ TO DO
 
  or 
 
- from consumer_price_index import calculator_class
+ from calculator_class import *
 
- print(dollars)
+
  ```
 
 This program takes dollar amounts and adjusts for inflation. 

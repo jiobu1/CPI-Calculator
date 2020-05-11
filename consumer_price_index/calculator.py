@@ -46,6 +46,7 @@ def inflation_adjustment(amount, year):
 
     Params:
         amount and year must be inputted 
+        the year pulls the consumer price index information 
 
     Returns:
         Converted  dollar amount
