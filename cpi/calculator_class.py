@@ -50,7 +50,13 @@ class Year:
 
 class Conversion_Year(Year):
     """
+    This is the conversion year class. This class inherits from the year class. 
 
+    Params:
+        This utilizes the year's cpi get inflation rate function and needs an dollar famount.
+
+    Returns:
+        A literal that converts dollar amounts using inflation rate.
     """
     def __init__(self, value, amount):
         super().__init__(value)
