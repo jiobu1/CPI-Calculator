@@ -1,0 +1,2 @@
+# review
+Your code was cleanly spaced, well commented, and stylistic. I personally have trouble filling out comments for my code and it make it easy to understand what you were doing. I felt that the second class wasn't needed and everything could be done in the first class because it was inheriting just the year.
