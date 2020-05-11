@@ -2,6 +2,15 @@
 
 
 class Year:
+    """
+    This is a Year class
+    
+    Params:
+        This takes a year value and then looks up consumer price index for the year  
+
+    Returns:
+        It returns the inflation rate for the year selected
+    """
     def __init__(self, value):
         self.year = value
         self.inflation_rate = self.get_inflation_rate()
@@ -39,7 +48,10 @@ class Year:
         return cpi_dictionary[self.year]
 
 
-class Reference_Year(Year):
+class Conversion_Year(Year):
+    """
+
+    """
     def __init__(self, value, amount):
         super().__init__(value)
         self.amount = amount
@@ -51,23 +63,10 @@ class Reference_Year(Year):
 
 
 amount = int(input("Please choose a number (e.g. 10540) "))
-baseline_year = int(input("[Baseline] Choose a year between 1992 and 2019 "))
-reference_year = int(input("[Reference] Choose a year between 1992 and 2019 "))
+starting_year = int(input("[Start] Choose a year between 1992 and 2019 "))
+conversion_year = int(input("[Conversion] Choose a year between 1992 and 2019 "))
 
-baseline_year_instance = Year(baseline_year)
-reference_year_instance = Reference_Year(reference_year, amount)
-dollars = reference_year_instance.get_dollars(baseline_year_instance)
+conversion_year_instance = Year(conversion_year)
+starting_year_instance =Conversion_Year(starting_year, amount)
+dollars = starting_year_instance.get_dollars(conversion_year_instance)
 print(dollars)
-
-# class Run(Reference_Year):
-#     def __init__(self, value, amount, input):
-#         super().__init__(value, amount)
-#         self.dollar_value = int(input("Please choose a number (e.g. 10540) "))
-#         self.baseline_year = int(input("[Baseline] Choose a year between 1992 and 2019 "))
-#         self.reference_year = int(input("[Reference] Choose a year between 1992 and 2019 "))
-
-#     def dollars(self, baseline_year):
-#         self.baseline_year_instance = Year(baseline_year)
-#         self. reference_year_instance = Reference_Year(self.reference_year, self.dollar_value)
-#         adjusted_amount = self.reference_year_instance.get_dollars(self.baseline_year_instance)
-#         return adjusted_amount
