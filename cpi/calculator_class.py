@@ -73,6 +73,6 @@ starting_year = int(input("[Start] Choose a year between 1992 and 2019 "))
 conversion_year = int(input("[Conversion] Choose a year between 1992 and 2019 "))
 
 conversion_year_instance = Year(conversion_year)
-starting_year_instance =Conversion_Year(starting_year, amount)
-dollars = starting_year_instance.get_dollars(conversion_year_instance)
+year_instance =Conversion_Year(starting_year, amount)
+dollars = year_instance.get_dollars(conversion_year_instance)
 print(dollars)
