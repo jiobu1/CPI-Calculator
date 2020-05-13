@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="cpi", # the name that you will install via pip
-    version="1.21",
+    version="1.22",
     author="Jisha Obukwelu",
     author_email="jisha@lambdastudents.com",
     description="Converts monetary amounts either to present day values (2019) or historical values (1992-2018)",

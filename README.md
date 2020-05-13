@@ -1,6 +1,9 @@
 # CPI-Calculator
 
 # Installation
+```sh
+pip install -i https://test.pypi.org/simple/ cpi
+```
 
 TO DO
 
