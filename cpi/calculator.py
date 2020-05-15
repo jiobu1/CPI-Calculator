@@ -58,3 +58,5 @@ def inflation_adjustment(amount, year):
 
 
 print(inflation_adjustment(amount, year))
+
+
